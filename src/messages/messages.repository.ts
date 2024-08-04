@@ -13,7 +13,7 @@ export class MessageRepository {
     const messages = JSON.parse(contents);
     return messages;
   }
-
+  // create
   async create(content: string) {
     console.log('repo');
     const contents = await readFile('message.json', 'utf8');
